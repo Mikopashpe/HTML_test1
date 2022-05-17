@@ -3,76 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <title>Page</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td><img src="ava.jpg" width="200" /></td>
-        <td>
-          <h1>Ekaterina Strakhova</h1>
-          <p>About me: <em>nothing</em></p>
-          <p>I just learning <strong>Python</strong></p>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h2>My Git projects:</h2>
-    <ul>
-      <li>@Mikopashpe</li>
-    </ul>
-    <hr />
-    <h2>My hobbies:</h2>
-    <ol>
-      <li>Drums</li>
-      <li>Guitar</li>
-      <li>Cats</li>
-    </ol>
-    <hr />
-    <h2>What can i do?</h2>
-    <table>
-      <tr>
-        <th>Language</th>
-        <th>Skills</th>
-        <th>How long?</th>
-      </tr>
-      <tr>
-        <td>Python</td>
-        <td>Yes</td>
-        <td>60 days</td>
-      </tr>
-      <tr>
-        <td>Java</td>
-        <td>No</td>
-        <td>0 days</td>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>Yes</td>
-        <td>7 days</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Feedback</h2>
-    <form>
-      <table>
-        <tr>
-          <td><label for="name">Your name:</label></td>
-          <td><input type="text" id="name" placeholder="Name" /></td>
-        </tr>
-        <tr>
-          <td><label for="email">Your Email:</label></td>
-          <td><input type="text" id="email" placeholder="Email" /></td>
-        </tr>
-        <tr>
-          <td><label for="text">Message:</label></td>
-          <td><textarea id="text" cols="30" rows="10"></textarea></td>
-        </tr>
-        <tr>
-          <td><input type="submit" value="Send" /></td>
-        </tr>
-      </table>
-    </form>
-    <h2>Next page</h2>
-    <a href="second.html" target="_blank"> Link</a>
+    <div class="container">
+      <div class="info">
+        <img src="ava.jpg" class="avatar" />
+        <h1>Ekaterina Strakhova</h1>
+        <p>About me: nothing</p>
+        <p>I just learning <strong>Python</strong></p>
+        <h4>My Git projects:</h4>
+        <a href="https://github.com/Mikopashpe">Git</a>
+      </div>
+      <div class="card bg-yellow">
+        <h2>My hobbies:</h2>
+        <ol class="list">
+          <li>Drums</li>
+          <li>Guitar</li>
+          <li>Cats</li>
+        </ol>
+      </div>
+      <div class="card bg-green">
+        <h2>What can i do?</h2>
+        <table class="table">
+          <tr>
+            <td>Python</td>
+            <td>Yes</td>
+            <td>60 days</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>No</td>
+            <td>0 days</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>Yes</td>
+            <td>7 days</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card bg-red">
+        <div class="contact">
+          <h2>Feedback</h2>
+          <form>
+            <div class="form-group">
+              <div class="row">
+            <table>
+              <tr>
+                <td><label for="name">Your name:</label></td>
+                <td><input type="text" id="name" placeholder="Name" /></td>
+              </tr>
+            </div>
+            <div class="form-group">
+              <tr>
+                <td><label for="email">Your Email:</label></td>
+                <td><input type="text" id="email" placeholder="Email" /></td>
+              </tr>
+            </div>
+          </div>
+            <div class="form-group">
+              <tr>
+                <td><label for="text">Message:</label></td>
+                <td><textarea id="text" cols="30" rows="10"></textarea></td>
+              </tr>
+            </div>
+              <tr>
+                <td><input type="submit" value="Send" /></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+      <h2>Next page</h2>
+      <a href="second.html" target="_blank"> Link</a>
   </body>
 </html>
